@@ -1,0 +1,11 @@
+exports.commentAdded =
+  functions.database.ref('/comments/{pushId}')
+  .onWrite((event) => {
+
+    const comment = event.data;
+
+    return comment.ref.update({
+      "serverTime": new Date().toJSON()
+    });
+
+});

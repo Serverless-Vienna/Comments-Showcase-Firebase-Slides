@@ -1,0 +1,10 @@
+init(handler) {
+  this.commRef= this.database.ref('comments');
+
+  this.commRef.on('child_added', handler);
+  this.commRef.on('child_changed', handler);
+}
+
+post(comment) {
+  this.commRef.push(comment);
+}

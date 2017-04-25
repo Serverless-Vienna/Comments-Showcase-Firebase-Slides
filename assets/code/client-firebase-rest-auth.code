@@ -1,0 +1,19 @@
+post(comment) {
+
+  const url =
+    "https://.../comments?auth="
+
+  firebase.auth().currentUser.getToken()
+  .then(token => {
+    var request =
+      new Request(url + token, {
+      method: 'POST',
+      body: JSON.stringify(comment),
+      mode: 'cors',
+      redirect: 'follow'
+    });
+
+    return fetch(request);
+
+  });
+}

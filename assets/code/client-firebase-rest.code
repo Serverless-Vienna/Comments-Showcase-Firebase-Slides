@@ -1,0 +1,16 @@
+post(comment) {
+
+  const url =
+    "https://.../comments"
+
+  var request =
+    new Request(url, {
+    method: 'POST',
+    body: JSON.stringify(comment),
+    mode: 'cors',
+    redirect: 'follow'
+  });
+
+  fetch(request);
+
+}

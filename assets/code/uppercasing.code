@@ -1,0 +1,10 @@
+exports.upperCase = functions.database
+  .ref("/comments/{pushId}/value")
+  .onWrite((event) => {
+
+    const newValue =
+      event.data.val().toUpperCase();
+
+    return event.data.ref.set(newValue);
+
+});

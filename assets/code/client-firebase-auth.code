@@ -1,0 +1,10 @@
+const credential =
+  firebase.auth.GoogleAuthProvider.credential(
+    googleLogin.getAuthResponse().id_token
+  );
+
+firebase.auth().signInWithCredential(
+  credential
+);
+
+firebase.auth().signOut();
