@@ -1,5 +1,5 @@
 +----------+                +----------+
-| post     |                |          |
+| post     |     push       |          |
 | comments |  ----------->  |          |
 |          |                |          |
 +----------+                | comments |
@@ -9,4 +9,4 @@
 | comments |    changed     |          |
 |          |  <-----------  |          |
 +----------+                +----------+
-  browser                     firebase
+  browser                     firebase        function

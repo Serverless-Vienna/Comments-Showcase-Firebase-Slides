@@ -11,6 +11,6 @@ post(comment) {
     redirect: 'follow'
   });
 
-  fetch(request);
+  return fetch(request);
 
 }

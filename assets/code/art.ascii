@@ -21,7 +21,7 @@
 
 +---------+                           +----------+
 | post    |       +------------+      |          |
-| comment |   ->  | servertime |  ->  | comments |
+| comment |   ->  | timestamp  |  ->  | comments |
 |         |       +------------+      |          |
 +---------+                           +----------+
   browser                               firebase
