@@ -1,4 +1,4 @@
-# Spectacle Boilerplate
+# Serverless Vienna: Firebase - Comments Showcase Slides
 
 ## Reference
 

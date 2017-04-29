@@ -5,7 +5,7 @@ exports.commentAdded =
     const comment = event.data;
 
     if (comment.hasChild("timestamp")) {
-      return;
+      return null;
     }
 
     return comment.ref.update({
